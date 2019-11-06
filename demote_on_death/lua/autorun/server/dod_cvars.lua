@@ -2,3 +2,4 @@ CreateConVar("dod_enable", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable or disable 
 CreateConVar("dod_silent", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Demote players that are killed silently (killed by admin commands for example)")
 CreateConVar("dod_suicide", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Demote players that suicided (kill in console)")
 CreateConVar("dod_adminbypass", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Do not demote admins")
+CreateConVar("dod_darkrpcheck", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Checks if gamemode is darkrp. Disable this if you have a custom darkrp")
