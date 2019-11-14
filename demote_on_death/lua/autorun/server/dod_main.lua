@@ -22,4 +22,4 @@ local function DarkRPDemoteOnSilentDeath(victim, inflictor, attacker)
 		DarkRPDemoteOnDeath(victim, inflictor, attacker) -- use less code :P
 	end
 end
-hook.Add("PlayerDeath", "DarkRP Demote on Silent Death", DarkRPDemoteOnSilentDeath)
+hook.Add("PlayerSilentDeath", "DarkRP Demote on Silent Death", DarkRPDemoteOnSilentDeath)
