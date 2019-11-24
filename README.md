@@ -1,5 +1,5 @@
 # gmod-demote_on_death
-Demote players when they are killed in DarkRP.
+An addon that demotes players when they are killed in DarkRP (Gmod).
 
 ### Config through cvars
 dod_enable 0/1 (def 1) - Enable or disable Demote On Death\
