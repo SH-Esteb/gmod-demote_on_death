@@ -3,7 +3,7 @@ local function DarkRPDemoteOnDeath(victim, inflictor, attacker)
 		if GetConVar("dod_enable"):GetBool() then
 			if !GetConVar("dod_adminbypass"):GetBool() and !victim:IsAdmin() then
 				if victim == attacker then
-					if GetConVar("dod_suicide"):GetBool()
+					if GetConVar("dod_suicide"):GetBool() then
 						victim:teamBan()
 						victim:changeTeam(GAMEMODE.DefaultTeam, true)
 					end
