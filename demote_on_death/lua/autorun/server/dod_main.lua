@@ -17,9 +17,10 @@ local function DarkRPDemoteOnDeath(victim, inflictor, attacker)
 end
 hook.Add("PlayerDeath", "DarkRP Demote on Death", DarkRPDemoteOnDeath)
 
-local function DarkRPDemoteOnSilentDeath(victim, inflictor, attacker)
-	if GetConVar("dod_silent"):GetBool() then
-		DarkRPDemoteOnDeath(victim, inflictor, attacker) -- use less code :P
-	end
-end
-hook.Add("PlayerSilentDeath", "DarkRP Demote on Silent Death", DarkRPDemoteOnSilentDeath)
+--local function DarkRPDemoteOnSilentDeath(victim, inflictor, attacker)
+	--if GetConVar("dod_silent"):GetBool() then
+		--DarkRPDemoteOnDeath(victim, inflictor, attacker) -- use less code :P
+	--end
+--end
+--hook.Add("PlayerSilentDeath", "DarkRP Demote on Silent Death", DarkRPDemoteOnSilentDeath)
+-- This was disabled because of conflicts with job changing silent kills for example. I did not find a solution around, so I just disabled it
